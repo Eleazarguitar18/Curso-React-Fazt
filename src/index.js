@@ -5,16 +5,27 @@ import Usuario, { Producto } from "./Usercard";
 
 import { Cancion } from "./Cancion";
 import { Button } from "./Button";
-
-
+import { TaskCard } from "./Task";
+import { Saludar } from "./Saludar";
+import { From } from "./Form";
 // const rootElement = document.getElementById('root')
 const root = ReactDOM.createRoot(document.getElementById('root'))
 const precio = 10
+const handleChange = (e) => { console.log(e.target.value); }
 root.render(
     <>
-        <Button text='click me' />
+        <TaskCard ready={true} />
+        <Saludar />
+        <Button text='Ok' />
+        {/* una manera de ingresar */}
+
+        {/* <input onChange={handleChange} /> */}
+        <From />
+
+        {/* <Button text='click me' />
         <Button text='Pay' />
-        <Button text='' />
+        <Button text='' /> */}
+
         {/* <Greeting nombre={"eleazar"} />  */}
         {/* <Greeting />
         <Usuario />

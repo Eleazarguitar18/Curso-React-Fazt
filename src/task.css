@@ -1,0 +1,17 @@
+.card{
+    /* background-color: #28800b; */
+    background: linear-gradient(to right,#47d210,#23650f);
+    padding: 20px;
+    padding-top: 15px;
+    text-align: center;
+    font-family: Verdana;
+}
+h1 {
+    color: #efffe6;
+}
+.task-green{
+    color: #efffe6;
+}
+.task-red{
+    color: #0c2f04;
+}
