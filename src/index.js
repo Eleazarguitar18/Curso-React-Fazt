@@ -11,35 +11,24 @@ import { From } from "./Form";
 import { Posts } from "./Posts";
 import Calendario from "./Calendar";
 import { Users } from "./User";
+import { Counter } from "./Counter";
+import { Mensaje } from "./Input";
+import { UseEffectPractica } from "./UseEffectPractica";
 // const rootElement = document.getElementById('root')
 const root = ReactDOM.createRoot(document.getElementById('root'))
 const precio = 10
-const handleChange = (e) => { console.log(e.target.value); }
+// const handleChange = (e) => { console.log(e.target.value); }
 
-
-
-const user = [
-    {
-        id: 1,
-        name: "Pepe",
-        image: "https://robohash.org/user9",
-    },
-    {
-        id: 2,
-        name: "Teodoro",
-        image: "https://robohash.org/user10",
-    },
-    {
-        id: 3,
-        name: "Carlos",
-        image: "https://robohash.org/user31",
-    },
-];
 root.render(
     <>
+        <UseEffectPractica />
+        <Mensaje />
+        <hr />
+        <h3>contador  en componente aparte:</h3>
+        <Counter />
         <TaskCard ready={true} />
         <Saludar />
-        <Button text='Ok' />
+        {/* <Button text='Ok' /> */}
         {/* una manera de ingresar */}
 
         {/* <input onChange={handleChange} /> */}
@@ -47,6 +36,9 @@ root.render(
         <Posts />
         <Calendario />
         <Users />
+
+
+
         {/* {
             user.map((user, i) => {
                 return (
@@ -78,3 +70,22 @@ root.render(
     </>
 
 )
+
+// datos
+// const user = [
+//     {
+//         id: 1,
+//         name: "Pepe",
+//         image: "https://robohash.org/user9",
+//     },
+//     {
+//         id: 2,
+//         name: "Teodoro",
+//         image: "https://robohash.org/user10",
+//     },
+//     {
+//         id: 3,
+//         name: "Carlos",
+//         image: "https://robohash.org/user31",
+//     },
+// ];
