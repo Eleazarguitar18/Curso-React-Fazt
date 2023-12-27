@@ -1,3 +1,4 @@
+import { TfiUpload } from "react-icons/tfi";
 export function From() {
   return (
     <form
@@ -7,7 +8,9 @@ export function From() {
       }}
     >
       <h4>Registro usuario</h4>
-      <button>Send</button>
+      <button>
+        <TfiUpload /> Send
+      </button>
     </form>
   );
 }

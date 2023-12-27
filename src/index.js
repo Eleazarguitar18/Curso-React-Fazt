@@ -8,6 +8,8 @@ import { Button } from "./Button";
 import { TaskCard } from "./Task";
 import { Saludar } from "./Saludar";
 import { From } from "./Form";
+import { Posts } from "./Posts";
+
 // const rootElement = document.getElementById('root')
 const root = ReactDOM.createRoot(document.getElementById('root'))
 const precio = 10
@@ -21,6 +23,7 @@ root.render(
 
         {/* <input onChange={handleChange} /> */}
         <From />
+        <Posts />
 
         {/* <Button text='click me' />
         <Button text='Pay' />
