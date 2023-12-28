@@ -26,7 +26,7 @@ root.render(
         <hr />
         <h3>contador  en componente aparte:</h3>
         <Counter />
-        <TaskCard ready={true} />
+        <TaskCard />
         <Saludar />
         {/* <Button text='Ok' /> */}
         {/* una manera de ingresar */}
